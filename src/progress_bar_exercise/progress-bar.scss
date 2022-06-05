@@ -1,0 +1,39 @@
+@import '../shared_styles/colors.scss';
+@import '../shared_styles/typography.scss';
+@import '../shared_styles/resets.scss';
+@import '../shared_styles/general.scss';
+
+.progress-bar--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 25px;
+  opacity: 1;
+  transition: opacity 3s ease-in-out;
+}
+
+.progress-bar--back {
+  background-color: $gray-lighter;
+  border-radius: 60px;
+  height: 10px;
+  width: 100%;
+}
+
+.progress-bar--front {
+  background-color: $red;
+  height: 100%;
+  transition: width 1s linear;
+  background-image: linear-gradient(150deg, $red 0%, $sunset 80%);
+  border-radius: inherit;
+}
+
+.progress-bar__hide {
+  opacity: 0;
+}
