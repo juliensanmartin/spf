@@ -5,7 +5,7 @@ import "./button.scss";
 type ButtonProps = {
   label: string;
   variant: "success" | "warning" | "error";
-  disabled: boolean;
+  disabled?: boolean;
   onClick?: () => void;
 };
 

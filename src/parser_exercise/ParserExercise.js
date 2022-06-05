@@ -1,5 +1,6 @@
 import React from "react";
 import Exercise from "../exercise/Exercise";
+import { Parser } from "./Parser";
 
 const ParserExercise = () => {
   return (
@@ -18,5 +19,5 @@ export default ParserExercise;
 // ----------------------------------------------------------------------------------
 
 const Solution = () => {
-  return <div>Add solution here</div>;
+  return <Parser />;
 };

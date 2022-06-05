@@ -1,0 +1,47 @@
+@import '../shared_styles/colors.scss';
+@import '../shared_styles/typography.scss';
+@import '../shared_styles/resets.scss';
+@import '../shared_styles/general.scss';
+
+.parser--button-group {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.alphabet-grid--container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: $gray-lighter;
+}
+
+.alphabet-grid--letter {
+  display: flex;
+  flex-direction: column;
+  color: $gray-light;
+}
+
+.alphabet-grid--letter__found {
+  color: $gray-medium;
+}
+
+.textarea--container {
+  display: flex;
+  flex-direction: column;
+  background-color: $gray-lighter;
+  padding: 10px;
+}
+
+.textarea--label {
+  color: $gray;
+  align-self: flex-start;
+}
+
+.textarea--input {
+  resize: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: $gray-light;
+}
