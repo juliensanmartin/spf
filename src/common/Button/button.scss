@@ -1,0 +1,42 @@
+@import '../../shared_styles/colors.scss';
+@import '../../shared_styles/typography.scss';
+@import '../../shared_styles/resets.scss';
+@import '../../shared_styles/general.scss';
+
+.button {
+  border-radius: 25px;
+  min-width: 160px;
+  width: fit-content;
+  padding: 14px 20px;
+  margin: 20px;
+  border: 1px solid $gray;
+}
+
+.button:disabled {
+  color: $gray-lighter;
+  border-color: $gray-lighter;
+  cursor: not-allowed;
+}
+
+.button:hover {
+  border-width: 2px;
+}
+
+.button:active {
+  border-width: 3px;
+}
+
+.button__success {
+  color: $green;
+  border-color: $green;
+}
+
+.button__error {
+  color: $red;
+  border-color: $red;
+}
+
+.button__warning {
+  color: $sunset;
+  border-color: $sunset;
+}
